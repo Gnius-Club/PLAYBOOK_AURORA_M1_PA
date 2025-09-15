@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misión de Rescate - Protocolo A.U.R.O.R.A.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">🛰️</span> <strong>Misión de Rescate - Protocolo A.U.R.O.R.A.</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">👁️</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Plan de Misión</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el Comandante de Misión.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Introducir y reforzar el concepto de sintaxis estricta en la programación.</li>
+                                        <li>Comprender la importancia crítica de la ortografía exacta en variables y nombres de funciones (sensibilidad a mayúsculas y minúsculas).</li>
+                                        <li>Identificar y corregir errores comunes de sintaxis: terminadores de sentencia, encapsulamiento de cadenas, bloques de código y parámetros de función.</li>
+                                        <li>Fomentar la colaboración y la comunicación técnica para resolver problemas de depuración (debugging).</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">El Briefing Inicial</strong></li>
+                                        <li><strong class="tactic-highlight">Entrenamiento Acelerado</strong></li>
+                                        <li><strong class="tactic-highlight">El Desafío: Depuración Crítica</strong></li>
+                                        <li><strong class="tactic-highlight">Post-Análisis de Misión</strong></li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Reparación del código fuente de A.U.R.O.R.A. en la plataforma, demostrando comprensión de la sintaxis estricta, incluyendo la precisión en nombres de variables y funciones.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Presentación de diapositivas (5 diapositivas).</li>
+                                        <li>Plataforma o juego "Consola de Depuración" lista para los estudiantes.</li>
+                                        <li>Dispositivos (computadoras o tabletas) para los estudiantes, uno por pareja.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Verificación de Sistemas:</strong>
+                                            <ul>
+                                                <li>Asegurarse de que la plataforma "Consola de Depuración" funcione correctamente.</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar la conexión a internet y el proyector.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos del "Comandante" y las 5 reglas fundamentales para poder explicarlas con claridad.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: El Briefing Inicial - Intro y Contexto ⏰ 5 minutos</h2>
+                <p>Establecer el escenario de la misión y el sentido de urgencia para captar el interés de los estudiantes.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Llamada a Puestos ⏰ 2 minutos</h3>
+                            <p>Dar la bienvenida al equipo de ingenieros y sondear conocimientos previos sobre comunicación con robots.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Atención, equipo de ingenieros! ¡Bienvenidos a Control de Misión A.U.R.O.R.A.! Soy su Comandante y hoy tenemos una situación crítica en nuestras manos. Pero antes, ¿quién sabe cómo le 'hablamos' a los robots que están a millones de kilómetros, en planetas como Marte?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Alerta de Nivel 1: La Crisis de A.U.R.O.R.A. ⏰ 3 minutos</h3>
+                            <p>Proyecta Diapositiva 1. Exponer la situación crítica del rover A.U.R.O.R.A. y presentar la misión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Correcto. Les enviamos líneas de código, instrucciones precisas. Nuestro rover más avanzado, A.U.R.O.R.A., estaba ejecutando su misión a la perfección... hasta hace 72 horas.<br><br><em>(Señalar la llamarada solar en la diapositiva)</em> Una Eyección de Masa Coronal masiva, una explosión solar, impactó directamente en Marte. A.U.R.O.R.A. sobrevivió, pero su software sufrió una corrupción de datos en cascada.<br><br>Imaginen que cada instrucción en su 'cerebro' digital fue sacudida violentamente. El código no se borró, pero está lleno de errores tipográficos, símbolos fuera de lugar y nombres alterados. El rover no puede procesar una sola línea. Está completamente paralizado.<br><br>Su misión, si deciden aceptarla, es realizar una inspección de protocolos. Deben entrar en el código fuente de A.U.R.O.R.A. y corregir cada error de sintaxis. ¿Están listos para traer a A.U.R.O.R.A. de vuelta a casa?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Entrenamiento Acelerado - Brain Gym ⏰ 10 minutos</h2>
+                <p>Proporcionar el conocimiento técnico necesario (las reglas de sintaxis) para completar la misión con éxito.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: La Guía de Campo del Programador ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 2. Introducir el concepto de la "Guía de Campo" como el conjunto de reglas inquebrantables de la programación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Antes de sumergirnos en el código, deben dominar las cinco reglas fundamentales del lenguaje de A.U.R.O.R.A. A esto lo llamamos la 'Guía de Campo del Programador'. Un buen ingeniero la memoriza.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Las 5 Reglas Fundamentales ⏰ 8 minutos</h3>
+                            <p>Proyecta Diapositiva 3. Explicar cada una de las 5 reglas de sintaxis, haciendo hincapié en la Regla 5 sobre errores de tipeo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Estas reglas no son negociables para una computadora. Repasémoslas rápidamente.<br><br><strong>Regla 1: El Punto y Coma (;) - El Fin de la Orden.</strong> Toda instrucción completa debe terminar con un punto y coma.<br><br><strong>Regla 2: Las Cadenas de Texto ("") - Información Encapsulada.</strong> Cualquier texto que no sea un comando debe ir entre comillas dobles.<br><br><strong>Regla 3: Las Llaves ({}) - Los Contenedores de Bloques.</strong> Un grupo de comandos que van juntos se encierran entre llaves.<br><br><strong>Regla 4: Los Paréntesis (()) - El Contenedor de Parámetros.</strong> Información extra para una función, como avanzar(5), va dentro de paréntesis.<br><br><strong>¡Y LA REGLA DE ORO! Regla 5: Los NOMBRES CLAVE - ¡La Precisión Absoluta!</strong> El código define nombres para guardar datos, las variables. Por ejemplo: <code>let potencia = 100;</code>. Si más adelante escribimos <code>potensia</code> con 's', ¿creen que la computadora sabrá a qué nos referimos?<br><em>(Alumnos responden 'No')</em>.<br>¡Exacto! Las computadoras no adivinan. Son literales. <code>potencia</code> y <code>potensia</code> son dos cosas totalmente diferentes para ellas. ¡Su atención al detalle aquí es crucial!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: El Desafío: Depuración Crítica ⏰ 15 minutos</h2>
+                <p>Los estudiantes aplican las reglas aprendidas en un entorno práctico y colaborativo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Formación de Equipos y Despliegue ⏰ 3 minutos</h3>
+                            <p>Proyecta Diapositiva 4. Organizar a los estudiantes en parejas, explicar la interfaz de la consola y dar inicio a la operación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ingenieros, esta operación requiere colaboración. Van a trabajar en equipos de dos. Encuentren a su compañero y prepárense para la inmersión. Ante ustedes está la consola de depuración. Izquierda: Los módulos con fallos críticos 🔴. Su objetivo es dejarlos todos en estado operativo 🟢. Centro: El editor de código. Derecha: Su Guía de Campo como referencia. La misión comienza... ¡AHORA!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Operación de Depuración ⏰ 12 minutos</h3>
+                            <p>Supervisar el trabajo de los equipos, guiándolos con preguntas en lugar de respuestas directas. La Diapositiva 4 puede permanecer proyectada.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant"><em>(Sugerencias para el Comandante mientras circula por el aula)</em><br><br>"Equipo 1, en la línea 7, ¿el nombre de esa variable coincide exactamente con cómo se definió en la línea 4?"<br><br>"Equipo 2, revisen la condición de ese 'if'. ¿Están todos los símbolos de apertura ((, {) correctamente cerrados?"<br><br>"Buen trabajo, Equipo 3. Detectaron que a esa instrucción le faltaba su terminador. ¿Cómo se llamaba? ¡Exacto, el punto y coma!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: Post-Análisis de Misión - Think-Pair-Share ⏰ 5 minutos</h2>
+                <p>Consolidar el aprendizaje a través de la reflexión y el intercambio de estrategias entre pares.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Fusión de Equipos ⏰ 1 minuto</h3>
+                            <p>Reorganizar las parejas en escuadrones de cuatro para la fase de análisis.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Alto a la operación! Dejen sus teclados. Ahora, cada equipo de ingenieros se fusionará con otro equipo cercano. Formen un escuadrón de análisis de cuatro.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Puesta en Común ⏰ 4 minutos</h3>
+                            <p>Proyecta Diapositiva 5. Facilitar una breve discusión sobre los desafíos encontrados y las lecciones aprendidas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Escuadrones, tienen dos minutos para debatir sus hallazgos. Respondan a esto: 1. ¿Cuál fue el error de 'Nombre Clave' (typo) más difícil de encontrar? y 2. ¿Qué consejo clave le darían a otro ingeniero que esté a punto de empezar esta misión?<br><br><em>(Tras la discusión)</em><br><br>¡Tiempo! Escucho excelentes estrategias. Su atención al detalle ha sido impresionante. Han estabilizado los protocolos y han dado el primer paso para salvar a A.U.R.O.R.A. Prepárense para la Fase 2. ¡Buen trabajo, equipo! Misión cumplida.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
